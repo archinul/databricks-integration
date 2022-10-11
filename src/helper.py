@@ -1,4 +1,5 @@
 from pandas import read_csv
+from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
@@ -6,10 +7,13 @@ from sklearn.metrics import accuracy_score
 from sklearn.svm import SVC
 
 
-if __name__ == "__main__":
+def train_predict():
+    print("Hello World")
+
     # Load dataset
+    url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
     names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-    dataset = datasets.load_iris()
+    dataset = read_csv(url, names=names)
 
     # Split-out validation dataset
     array = dataset.values

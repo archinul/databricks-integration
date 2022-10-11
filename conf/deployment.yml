@@ -1,0 +1,7 @@
+environments:
+  default:
+    workflows:
+      - name: "iris"
+        spark_python_task:
+          python_file: "file://jobs/main.py"
+        existing_cluster_id : 1002-224334-fnou2wao

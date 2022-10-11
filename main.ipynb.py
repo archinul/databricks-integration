@@ -4,7 +4,7 @@
 
 # COMMAND ----------
 
-from helper import train_predict
+from src.helper import train_predict
 
 # COMMAND ----------
 
